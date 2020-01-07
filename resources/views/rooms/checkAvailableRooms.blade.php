@@ -14,10 +14,9 @@
 <div class="row">
     <div class="text-center medium-12 large-12 columns">
         <h4>Client Booking</h4>
-        <div class="text-center medium-2  columns">BOOKING FOR:</div>
         <div class="text-center medium-2  columns"><b>
-                {{$client->first_name}}
-                {{$client->last_name}}
+{{--               First Name: {{$client->first_name}}<br>--}}
+{{--                Last Name: {{$client->last_name}}--}}
             </b></div>
         <div class="container">
             <br/>

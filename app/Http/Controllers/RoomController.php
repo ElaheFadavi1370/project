@@ -116,10 +116,12 @@ class RoomController extends Controller
         return view('rooms/checkAvailableRooms', $data);
     }
 
-   public function roomdescription($room_id){
+   public function roomdescription ($room_id){
        $room=Room::findOrfail($room_id);
-//dd($room_id);
-       return view ('rooms.description', compact('room'));
+       $data=[];
+       $data['room_id']=$room_id;
+       //dd($room_id);
+       return view ('rooms.description', compact('room'), $data);
     }
 }
 

@@ -1,3 +1,4 @@
+
 @section('content')
     <ul>
         @foreach($rooms as $room)

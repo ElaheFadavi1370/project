@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Project</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -70,7 +70,6 @@
         <div class="top-right links">
             @if (Auth::check())
               <a href="{{ url('/rooms') }}">Rooms</a>
-              <a href="{{ url('/clients') }}">Clients</a>
               <a href="{{ url('/reservations') }}">Reservations</a>
             @else
                 <a href="{{ url('/login') }}">Login</a>
@@ -84,6 +83,22 @@
             Welcome to Elahe Fadavi Project
         </div>
     </div>
+        @yield('content')
+        <br>
+        <footer class="footer">
+            <div class="text-center map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202.46378332655263!2d51.40103260224281!3d35.71587481363931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e07b9f3628ae1%3A0x1e7f937adee8cbac!2sFarhang%20Azma%20Communications%20Co!5e0!3m2!1sen!2suk!4v1576660729894!5m2!1sen!2suk" width="500" height="500" frameborder="50" style="border:30;" allowfullscreen=""></iframe>
+            </div>
+            <p>Built by <a href="https://mail.google.com/mail/u/0/#inbox">Elahe Fadavi</a>. </p>
+
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script src="{{ url('_asset/fullcalendar/lib') }}/moment.min.js"></script>
+
+        @yield('js')
+
 </div>
 </body>
 </html>
