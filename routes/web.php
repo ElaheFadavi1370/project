@@ -74,3 +74,7 @@ Route::group(['middleware'=>['web', 'auth']], function() {
     });
 });
 Route::get('/carousel','CarouselController@carousel');
+Route::get('/employee', function(){
+
+    return view('employee');
+});

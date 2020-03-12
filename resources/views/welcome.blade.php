@@ -1,3 +1,5 @@
+@extends('layouts.zoodboro')
+@section('content')
 <!doctype html>
 <html lang="{{ config('app.locale') }}">
 <head>
